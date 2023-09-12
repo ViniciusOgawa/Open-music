@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <title>Open Music</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1>open music</h1>
+
+      <button id="dark-mode">
+        <img
+          src="./assets/img/night-mode.png"
+          alt="icon"
+          class="img"
+          id="dmIcon"
+        />
+      </button>
+    </header>
+
+    <main>
+      <nav>
+        <p class="tituloNav">Gênero Musical</p>
+
+        <ul id="ul-genero"></ul>
+
+        <div class="box">
+          <div class="box-inf">
+            <p>Definir preço</p>
+            <p id="preco">Até R$ 125</p>
+          </div>
+
+          <input
+            type="range"
+            min="0"
+            max="250"
+            class="input-range"
+            id="input-range"
+          />
+        </div>
+      </nav>
+
+      <section class="box-resultado">
+        <p>Albuns Encontrados</p>
+
+        <ul id="ul-card"></ul>
+      </section>
+    </main>
+
+    <script src="./pages/home/productsData.js"></script>
+    <script src="./pages/home/index.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+  </body>
+</html>
